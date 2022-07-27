@@ -1,4 +1,3 @@
-target
 build.sbt
 wine_model.tar.gz
 cs643-security.cer
