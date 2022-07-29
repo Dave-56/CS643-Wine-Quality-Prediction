@@ -21,7 +21,6 @@ Docker run -v [fullLocalPath of TestDataset.csv: data/TestDataset.csv ] 19943014
 
 for e.g.
 
-docker run -v /Users/preciousemakenemi/Desktop/CloudComputing/Wine-quality-prediction/data/TestDataset.csv:/dataTestDataset.csv 19943014/pemakenemi-wine-quality-predictor:mvn01
-```` 
+docker run -v /Users/preciousemakenemi/Desktop/CloudComputing/Wine-quality-prediction/data/ValidationDataset.csv:/datat.csv 19943014/pemakenemi-wine-quality-predictor:mvn01 
 
 

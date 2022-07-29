@@ -12,8 +12,8 @@ public class Constants {
     public static final String ACCESS_KEY_ID = System.getProperty("ACCESS_KEY_ID");
     public static final String SECRET_KEY = System.getProperty("SECRET_KEY");
 
-    public static final String TRAINING_DATASET = "data/TrainingDataset.csv";
-    public static final String VALIDATION_DATASET =  "ValidationDataset.csv";
+    public static final String TRAINING_DATASET = "TrainingDataset.csv";
+    public static final String VALIDATION_DATASET =  "data/ValidationDataset.csv";
     public static final String MODEL_PATH = "data/TrainingModel";
     public static final String TESTING_DATASET =  "data/TestDataset.csv";
 

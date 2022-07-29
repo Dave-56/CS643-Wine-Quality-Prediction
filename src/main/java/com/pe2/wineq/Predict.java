@@ -41,13 +41,13 @@ public class Predict {
 
         }
 
-        File tempFile = new File(TESTING_DATASET);
+        File tempFile = new File(VALIDATION_DATASET);
         boolean exists = tempFile.exists();
         if(exists){
             Predict parser = new Predict();
             parser.logisticRegression(spark);
         }else{
-            logger.error("The TestDataset.csv file does not exist..ensure the file is in data folder");
+            logger.error("The Validation dataset.csv file does not exist..ensure the file is in data folder");
         }
 
 
@@ -56,9 +56,9 @@ public class Predict {
 
 
     public void logisticRegression(SparkSession spark) {
-        logger.info("TestingDataSet Metrics \n");
+        logger.info("ValidationDataSet Metrics \n");
         PipelineModel pipelineModel = PipelineModel.load(MODEL_PATH);
-        Dataset<Row> testDf = getDataFrame(spark, true, TESTING_DATASET).cache();
+        Dataset<Row> testDf = getDataFrame(spark, true, VALIDATION_DATASET).cache();
         Dataset<Row> predictionDF = pipelineModel.transform(testDf).cache();
         predictionDF.select(FEATURES, LABEL, "prediction").show(5, false);
         printMertics(predictionDF);

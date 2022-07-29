@@ -54,7 +54,7 @@ public class MLTrainer {
             MLTrainer parser = new MLTrainer();
             parser.logisticRegression(spark);
         }else{
-            logger.info("TrainingDataset.csv doesn't exists");
+            logger.error("TrainingDataset.csv doesn't exists");
         }
 
 
