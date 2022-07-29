@@ -17,7 +17,7 @@ Goal: The purpose of this individual assignment is to learn how to develop paral
 ````
 docker pull 19943014/pemakenemi-wine-quality-predictor:mvno1
 
-Docker run -v [fullLocalPath of TestDataset.csv: data/TestDataset.csv ] 19943014/pemakenemi-wine-quality-predictor:mvn01
+Docker run -v [fullLocalPath of ValidationDataset.csv: data/ValidationDataset.csv ] 19943014/pemakenemi-wine-quality-predictor:mvn01
 
 for e.g.
 
