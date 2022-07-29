@@ -1,6 +1,6 @@
 FROM openjdk:8-jdk-alpine
 
-LABEL maintainer="Nilesh Deokar | nieldeokar"
+LABEL maintainer="Precious Emakenemi"
 LABEL version="v1"
 
 ENV DAEMON_RUN=true
